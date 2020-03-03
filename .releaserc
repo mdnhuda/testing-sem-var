@@ -1,0 +1,28 @@
+{
+    "branches": ["develop"],
+    "repositoryUrl": "https://github.com/mdnhuda/testing-sem-var.git",
+    "tagFormat": "release/${version}",
+    "release": {
+	"branches": ["develop"]
+    },
+    "plugins": [
+        "@semantic-release/commit-analyzer",
+        "@semantic-release/release-notes-generator",
+        [
+            "@semantic-release/changelog",
+            {
+                "changelogFile": "CHANGELOG.md",
+                "changelogTitle": "# Testing Semantic Versioning 
+            }
+        ],
+        [
+            "@semantic-release/git",
+            {
+                "assets": [
+                    "CHANGELOG.md"
+                ]
+            }
+        ]
+    ],
+}
+
