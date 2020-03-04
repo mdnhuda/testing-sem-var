@@ -2,3 +2,4 @@ build
 .gradle
 .idea
 .ipr
+node_modules
