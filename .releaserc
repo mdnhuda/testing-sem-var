@@ -6,8 +6,7 @@
 	"branches": ["develop"]
     },
     "plugins": [
-        "@semantic-release/commit-analyzer",
-        "@semantic-release/release-notes-generator",
+        "semantic-release-jira-lister",
         [
             "@semantic-release/changelog",
             {
@@ -24,5 +23,6 @@
             }
         ]
     ],
+
 }
 
