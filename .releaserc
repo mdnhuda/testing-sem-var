@@ -6,22 +6,7 @@
 	"branches": ["develop"]
     },
     "plugins": [
-        "semantic-release-jira-lister",
-        [
-            "@semantic-release/changelog",
-            {
-                "changelogFile": "CHANGELOG.md",
-                "changelogTitle": "# Testing Semantic Versioning"
-            }
-        ],
-        [
-            "@semantic-release/github",
-            {
-                "assets": [
-                    "CHANGELOG.md"
-                ]
-            }
-        ]
+        "semantic-release-jira-lister"
     ],
 
 }
